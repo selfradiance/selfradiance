@@ -5,6 +5,7 @@ Open-source reference implementations for **runtime accountability in AI agent s
 I started building about a month ago from zero coding background — I direct AI coding tools (primarily Claude Code) and make the design and architecture decisions myself. What I care about is a simple question:
 
 **How do we make autonomous agents economically accountable for what they do, what they're allowed to do, and what happens when they fail?**
+<img width="1440" height="1102" alt="image" src="https://github.com/user-attachments/assets/a1f1e527-cdfb-4825-ad7e-8e9c98136dd4" />
 
 ---
 
