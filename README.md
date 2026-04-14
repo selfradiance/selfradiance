@@ -45,7 +45,7 @@ Each agent proves a different verification regime on the same substrate. Built i
 
 **[MCP Firewall](https://github.com/selfradiance/agentgate-mcp-firewall)** · Governance proxy for MCP tool calls. Sits between MCP clients and servers, requires bonded authorization before forwarding, slashes on bad outcomes. v0.1.0 shipped. 36 tests.
 
-**Epistemic Poisoning Simulator** · Tests whether bond-and-slash can govern knowledge integrity — a saboteur agent corrupts shared knowledge to cause a target agent to make catastrophic mistakes. Design stage.
+**[Epistemic Poisoning Simulato](https://https://github.com/selfradiance/agentgate-epistemic-poisoning)r** · Tests whether bond-and-slash can govern knowledge integrity — a saboteur agent corrupts shared knowledge to cause a target agent to make catastrophic mistakes. v0.1.0 shipped. 129 tests.
 
 ---
 
