@@ -2,6 +2,14 @@
 
 Open-source reference implementations for **runtime accountability in AI agent systems**.
 
+## Start Here
+
+If you're new to my AI agent accountability work, here’s a short visual intro:
+
+**[AgentGate explainer thread on X](https://x.com/selfradiance11/status/2046010251128832398)**
+
+A 4-part series covering the core idea, why permissions are not enough, a concrete example, and why runtime accountability matters.
+
 **How do we make autonomous agents economically accountable for what they do, what they're allowed to do, and what happens when they fail?**
 <img width="1440" height="1102" alt="image" src="https://github.com/user-attachments/assets/a1f1e527-cdfb-4825-ad7e-8e9c98136dd4" />
 
