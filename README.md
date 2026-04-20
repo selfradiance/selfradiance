@@ -62,6 +62,8 @@ Each agent proves a different verification regime on the same substrate. Built i
 
 **[MCP Firewall](https://github.com/selfradiance/agentgate-mcp-firewall)** · Governance proxy for MCP tool calls. Sits between MCP clients and servers, requires bonded authorization before forwarding, slashes on bad outcomes. v0.3.0 shipped. 83 tests.
 
+**[Governed WriteFile Demo](https://github.com/selfradiance/agentgate-governed-writefile-demo)** · Tiny reference demo for one narrow outsider-readable path through AgentGate + MCP Firewall: identity → bond → authenticated governed `write_file` → independent on-disk verification → audit artifact.
+
 **[Epistemic Poisoning Simulator](https://github.com/selfradiance/agentgate-epistemic-poisoning)** · Tests whether bond-and-slash can govern knowledge integrity: a saboteur agent corrupts shared knowledge to induce catastrophic mistakes in a target agent. v0.1.0 shipped. 129 tests.
 
 ---
