@@ -1,89 +1,61 @@
 # selfradiance
 
-Open-source reference implementations for **runtime accountability in AI agent systems**.
+I build narrow open-source proofs for AI agent accountability and governance. The work is organized around specific seams where agents fail: instruction intake, pre-execution policy, governed execution, delegated authority, bonded human judgment, substrate, and adversarial pressure. Each repo makes a small claim and stays local-first when possible.
 
-## Start Here
+## Start here
 
-If you're new to my AI agent accountability work, here’s a short visual intro:
+If you're new, use this order:
 
-**[AgentGate explainer thread on X](https://x.com/selfradiance11/status/2046010251128832398)**
+1. [agentgate-governed-writefile-demo](https://github.com/selfradiance/agentgate-governed-writefile-demo) - the fastest outsider-readable proof path through governed `write_file`.
+2. [agentgate-mcp-firewall](https://github.com/selfradiance/agentgate-mcp-firewall) - the verification layer that checks whether governed filesystem calls produced the effects they claimed.
+3. [agentgate](https://github.com/selfradiance/agentgate) - the deeper accountability substrate underneath that path.
 
-A 4-part series covering the core idea, why permissions are not enough, a concrete example, and why runtime accountability matters.
+## Ecosystem map
 
-**How do we make autonomous agents economically accountable for what they do, what they're allowed to do, and what happens when they fail?**
-<img width="1440" height="1102" alt="image" src="https://github.com/user-attachments/assets/a1f1e527-cdfb-4825-ad7e-8e9c98136dd4" />
+### Instruction intake
 
-I build these systems by directing AI coding tools (primarily Claude Code) and making the design and architecture decisions myself.
+- [governed-repo-intake](https://github.com/selfradiance/governed-repo-intake) - local deterministic intake gate for instruction-bearing repo surfaces; explicit human acknowledgment is required before approval, and approval is not a safety verdict.
 
----
+### Pre-execution policy gates
 
-**Core engine:** [AgentGate](https://github.com/selfradiance/agentgate) · **Proof ladder:** Agents 001–006 · **Extensions:** Delegation, MCP Firewall, Epistemic Poisoning · **Standards:** RestaRules
+- [ActionProof](https://github.com/selfradiance/ActionProof) - deterministic allow/deny gate for one credentialed tool request before execution; asks whether this call should happen.
+- [SecretBoundary](https://github.com/selfradiance/SecretBoundary) - deterministic gate for one outbound webhook-style payload crossing explicit secret boundaries before execution.
 
-## Where to Start
+### Governed execution / effect verification
 
-1. **[AgentGate](https://github.com/selfradiance/agentgate)** — the core engine
-2. **[Red Team Simulator](https://github.com/selfradiance/agentgate-red-team-simulator)** — what happens when you attack it
-3. **[MCP Firewall](https://github.com/selfradiance/agentgate-mcp-firewall)** — how it connects to what the industry is deploying now
-4. **[Recursive Verifier](https://github.com/selfradiance/agentgate-recursive-verifier)** — proof-style verification as a reusable tool
+- [agentgate-governed-writefile-demo](https://github.com/selfradiance/agentgate-governed-writefile-demo) - smallest outsider-readable proof path through governed `write_file`: intended call, real on-disk effect, and inspectable audit artifacts.
+- [agentgate-mcp-firewall](https://github.com/selfradiance/agentgate-mcp-firewall) - thin governance proxy; on its current shipped proof surfaces it independently verifies two narrow filesystem effects (`write_file` and `delete_file`) instead of trusting upstream success claims.
 
-<img width="1440" height="1102" alt="image" src="https://github.com/user-attachments/assets/a1f1e527-cdfb-4825-ad7e-8e9c98136dd4" />
+### Delegated authority
 
----
+- [agentgate-delegation-proof](https://github.com/selfradiance/agentgate-delegation-proof) - bounded delegated authority with a checkpointed execution path and a local append-only transparency log, not tamper-evident anchoring.
 
-## AgentGate
+### Bonded human judgment
 
-[**agentgate**](https://github.com/selfradiance/agentgate) — A collateralized execution engine for AI agents. Before an agent can take a high-impact action, it must post a bond as collateral. Good behavior releases the bond. Bad behavior slashes it. Ed25519 signed identities, reusable bonds, progressive trust tiers, prediction markets, and an auto-slash sweeper.
+- [agentgate-bonded-email-rewriter](https://github.com/selfradiance/agentgate-bonded-email-rewriter) - bonded rewriting where a human approve/reject judgment settles the outcome.
+- [agent-007-bonded-email-triage](https://github.com/selfradiance/agent-007-bonded-email-triage) - bonded inbox triage where exact-category human correction settles the outcome.
 
-Everything below is built on top of AgentGate or extends its model.
+### Substrate
 
----
+- [agentgate](https://github.com/selfradiance/agentgate) - collateralized execution engine and accountability substrate underneath much of the ecosystem.
 
-## Reference Agents
+### Adversarial evaluation and simulation
 
-Each agent proves a different verification regime on the same substrate. Built in sequence, each one harder than the last.
+- [agentgate-red-team-simulator](https://github.com/selfradiance/agentgate-red-team-simulator) - adversarial pressure against AgentGate from the outside.
+- [agentgate-recursive-verifier](https://github.com/selfradiance/agentgate-recursive-verifier) - recursive proof-oriented verifier; its strongest public path right now is pre-build API spec auditing.
+- [agentgate-incentive-wargame](https://github.com/selfradiance/agentgate-incentive-wargame) - stress-tests incentive systems under adversarial adaptive strategies.
+- [agentgate-epistemic-poisoning](https://github.com/selfradiance/agentgate-epistemic-poisoning) - poisoning simulation around decision integrity under bond.
+- [restarules](https://github.com/selfradiance/restarules) - machine-readable venue conduct rules for agents.
 
-**[001 — Bonded File Transform](https://github.com/selfradiance/agentgate-bonded-file-transform)** · Deterministic verification — machine checks machine. 60 tests.
+## How these fit together
 
-**[002 — File Guardian](https://github.com/selfradiance/agentgate-bonded-file-guardian)** · Command-based verification + rollback on failure. 50 tests.
+AgentGate is the substrate. Some repos govern what instruction-bearing material gets admitted before work starts. Some ask whether a tool call should happen at all. MCP Firewall then handles a narrower and different question: whether a governed filesystem call produced the effect it claimed after execution on its current proof surfaces. Other repos explore bounded delegation, bonded human judgment, or adversarial pressure. The point is layered narrow proofs, not one giant framework.
 
-**[003 — Email Rewriter](https://github.com/selfradiance/agentgate-bonded-email-rewriter)** · Human judgment in the loop — human decides pass/fail. 11 tests.
+## Strongest proof path right now
 
-**[004 — Red Team Simulator](https://github.com/selfradiance/agentgate-red-team-simulator)** · Adversarial probing against live AgentGate over HTTP. Escalates from solo attacker to adaptive, recursive, coordinated team, and 9-agent swarm attacks. Includes Sleeper Agent (v0.6.0) for temporal reconnaissance. 330 tests.
+For the fastest concrete entry point, start with [agentgate-governed-writefile-demo](https://github.com/selfradiance/agentgate-governed-writefile-demo). If you want the current filesystem verification layer behind that demo, read [agentgate-mcp-firewall](https://github.com/selfradiance/agentgate-mcp-firewall) next. If you want the deeper engine underneath both, read [agentgate](https://github.com/selfradiance/agentgate) after that; it is the substrate, not the first repo most cold visitors should begin with.
 
-**[005 — Recursive Verifier](https://github.com/selfradiance/agentgate-recursive-verifier)** · Proof-style verification — generates and runs executable scripts in a sandbox, scores outcomes, and iterates. Three modes: test, review, design. 149 tests.
+## Other notable projects
 
-**[006 — Incentive Wargame](https://github.com/selfradiance/agentgate-incentive-wargame)** · Stress-tests incentive rules with AI-generated economic strategies. Found a real contribution-cap bug in its own governance rules. 301 tests.
-
----
-
-## Governance Extensions
-
-**[Delegation Identity Proof](https://github.com/selfradiance/agentgate-delegation-proof)** · Bounded human-to-agent delegation with dual bonds and a 6-state machine. Who delegated what authority to which agent, under what scope. v0.1.0 shipped. 88 tests.
-
-**[MCP Firewall](https://github.com/selfradiance/agentgate-mcp-firewall)** · Governance proxy for MCP tool calls. Sits between MCP clients and servers, requires bonded authorization before forwarding, slashes on bad outcomes. v0.3.0 shipped. 83 tests.
-
-**[Governed WriteFile Demo](https://github.com/selfradiance/agentgate-governed-writefile-demo)** · Tiny reference demo for one narrow outsider-readable path through AgentGate + MCP Firewall: identity → bond → authenticated governed `write_file` → independent on-disk verification → audit artifact.
-
-**[Epistemic Poisoning Simulator](https://github.com/selfradiance/agentgate-epistemic-poisoning)** · Tests whether bond-and-slash can govern knowledge integrity: a saboteur agent corrupts shared knowledge to induce catastrophic mistakes in a target agent. v0.1.0 shipped. 129 tests.
-
----
-
-## Standards
-
-**[RestaRules](https://github.com/selfradiance/restarules)** · Machine-readable agent conduct rules for restaurants. A `/.well-known/restarules.json` discovery model with formal decision procedures. A different angle on the same question: how do environments publish enforceable norms for AI agents?
-
----
-
-## Why This Exists
-
-Most agent systems rely on a binary trust model: either the agent has access or it doesn't, either it's authenticated or it isn't, either the model is "safe" or it isn't.
-
-I'm building toward a missing middle layer: economic accountability, delegated authority with scope, runtime enforcement, tool governance, and knowledge integrity.
-
----
-
-## Process
-
-Every project goes through the same pipeline: multi-AI design audit (Claude, ChatGPT, Gemini, Grok in rotating roles), Claude Code implementation, 8-round Claude Code audit, Codex cold-eyes audit, and Claude Code cross-verification. I write companion articles on [Medium](https://medium.com/@selfradiance) and post shorter versions on X.
-
-This GitHub is the canonical source for the actual builds.
+- [agentgate-bonded-file-transform](https://github.com/selfradiance/agentgate-bonded-file-transform) - early deterministic verification proof on the same substrate.
+- [agentgate-bonded-file-guardian](https://github.com/selfradiance/agentgate-bonded-file-guardian) - command-based file verification with rollback on failure.
