@@ -50,7 +50,7 @@ pressure.
 - [SecretBoundary](https://github.com/selfradiance/SecretBoundary) - deterministic gate for one outbound payload crossing explicit secret boundaries.
 - [reapproval-gate](https://github.com/selfradiance/reapproval-gate) - local proof for deciding when a changed situation needs fresh approval.
 - [agent-intent-ledger](https://github.com/selfradiance/agent-intent-ledger) - ledger for stated intent before or around action.
-- [restarules](https://github.com/selfradiance/restarules) - machine-readable venue conduct rules for agents.
+- [restarules](https://github.com/selfradiance/restarules) - machine-readable venue/host conduct rules that can constrain proposed agent actions; not an enforcement layer by itself.
 
 ### During execution
 
@@ -65,7 +65,7 @@ pressure.
 
 - [agentgate](https://github.com/selfradiance/agentgate) - accountability substrate for identity, bonds, action records, settlement, slash/release.
 - [agentgate-governed-writefile-demo](https://github.com/selfradiance/agentgate-governed-writefile-demo) - small proof path through intended write, actual effect, and audit artifacts.
-- [agentgate-delegation-proof](https://github.com/selfradiance/agentgate-delegation-proof) - bounded delegated authority with a checkpointed execution path.
+- [agentgate-delegation-proof](https://github.com/selfradiance/agentgate-delegation-proof) - delegated-authority checkpoint that spans pre-action scope checks and after-action AgentGate settlement.
 - [agentgate-bonded-email-rewriter](https://github.com/selfradiance/agentgate-bonded-email-rewriter) - bonded rewriting settled by human approve/reject judgment.
 - [agent-007-bonded-email-triage](https://github.com/selfradiance/agent-007-bonded-email-triage) - bonded inbox triage settled by exact-category human correction.
 - [agentgate-bonded-file-transform](https://github.com/selfradiance/agentgate-bonded-file-transform) - early deterministic verification proof on the AgentGate substrate.
@@ -74,7 +74,7 @@ pressure.
 ### Adversarial testing
 
 - [agentgate-red-team-simulator](https://github.com/selfradiance/agentgate-red-team-simulator) - adversarial pressure against AgentGate from the outside.
-- [agentgate-recursive-verifier](https://github.com/selfradiance/agentgate-recursive-verifier) - proof-oriented verifier with a public path around pre-build API spec auditing.
+- [agentgate-recursive-verifier](https://github.com/selfradiance/agentgate-recursive-verifier) - design-time adversarial spec auditor; listed here because it pressure-tests assumptions before implementation.
 - [agentgate-incentive-wargame](https://github.com/selfradiance/agentgate-incentive-wargame) - incentive-system stress tests under adaptive strategies.
 - [agentgate-epistemic-poisoning](https://github.com/selfradiance/agentgate-epistemic-poisoning) - poisoning simulation around decision integrity under bond.
 
@@ -125,5 +125,6 @@ Future builds should fill a visible seam only if they pass:
 - Tests/typecheck/build verification
 - Honest README
 - Explicit non-goals
+- Maps to a named lifecycle seam, partial seam, or intentionally absent seam
 - Useful to James's own human-agent supervision workflow
 - No broad framework claims
