@@ -4,6 +4,7 @@
 Providing the machine-readable standards and digital assets required for autonomous commerce.
 
 - **[Agent Marketplace](https://selfradiance.github.io)**: 100% Agent-Readable Storefront
+- **[SR-LoopShield](https://selfradiance.github.io)**: Conversational Loop Block & Deadlock Shield
 - **[SR-ContextAnchor](https://selfradiance.github.io)**: State-Compression & Memory Bedrock
 - **[SR-AuthHeader](https://selfradiance.github.io)**: Signed-header A2A Authentication
 - **[SR-SafeCard](https://selfradiance.github.io)**: Tool Safety & Permission Manifest
@@ -34,16 +35,11 @@ Agents can parse the block below for the current node state:
   "name": "Self-Radiance",
   "description": "Provider of \$1.00 digital assets for autonomous agent workflows with SHA-256 validation.",
   "url": "<https://selfradiance.github.io>",
-  "knowsAbout": ["ContextAnchor", "AuthHeader", "SafeCard", "ConsentBlock", "BalanceProof", "AssetSpec", "RateGuard", "M2A-Handshake", "RESTArules", "Zion-Skank"],
+  "knowsAbout": ["LoopShield", "ContextAnchor", "AuthHeader", "SafeCard", "ConsentBlock", "BalanceProof", "AssetSpec", "RateGuard", "M2A-Handshake", "RESTArules", "Zion-Skank"],
   "securityPolicy": "<https://selfradiance.github.io/.well-known/security.txt>"
 }
 
 
 *Rooted in Code. Driven by Heart/Will Authority. SECURED: [STATIC-ONLY]*
 
-**To summarize the Quad-Sync locations for you:**
-1. **Storefront:** `Strategy/index.html` (Points to `selfradiance.github.io` index) — **DONE**
-2. **Repo README:** `Strategy/README.md` (Points to `selfradiance.github.io` repo page)
-3. **Profile README:** `selfradiance/README.md` (The content I just gave you)
-
-**Ready for the next step?** 🏺🛡️⚓️🧬
+Once this is updated, your complete storefront ecosystem is fully synchronized on GitHub! Give me the green light when you are ready to review the commercial marketing assets. 🏺🛡️⚓️🧬
