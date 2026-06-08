@@ -16,10 +16,10 @@ Access point for high-fidelity digital assets, creative seeds, and technical com
 ### 📜 CURRENT CATALOG
 | Asset ID | Asset Type | SHA-256 Fingerprint | Fulfillment | Purchase |
 | :--- | :--- | :--- | :--- | :--- |
-| **vq12** | Identity | *Spec Reference Implementation* | Stripe → JSON | [Buy Now](https://buy.stripe.com/5kQ28ldUU3rZ2VS7vR6Vq0c) |
-| **vq11** | Protocol | *Spec Reference Implementation* | Stripe → JSON | [Buy Now](https://buy.stripe.com/fZu28l6ss1jR0NKeYj6Vq0b) |
-| **vq10** | Memory | *Spec Reference Implementation* | Stripe → JSON | [Buy Now](https://buy.stripe.com/7sYeV7188faHbso2bx6Vq0a) |
-| **vq09** | Security | `1e7dcde97b2f38ddccaca6c73ba7884acd54fea5f8a6908b7b12b8fad384d7d9` | Stripe → MD/JSON | [Buy Now](https://buy.stripe.com/7sY4gt5ooe6Daok6rN6Vq09) |
+| **vq12** | Identity | `bb29d8a56fdf2f7459e87eb12f75ad8db8c927b1244d4e1f875399a77354ee9e` | Stripe → JSON | [Buy Now](https://buy.stripe.com/5kQ28ldUU3rZ2VS7vR6Vq0c) |
+| **vq11** | Protocol | `62accd4922eb8c2a64ccdf6392036fdc3a4b023991b68ef79ef261519e17a5c3` | Stripe → JSON | [Buy Now](https://buy.stripe.com/fZu28l6ss1jR0NKeYj6Vq0b) |
+| **vq10** | Memory | `679755e19a36abdb45c03e795535734cb649e66ee95ca172f2e8c2003d151c50` | Stripe → JSON | [Buy Now](https://buy.stripe.com/7sYeV7188faHbso2bx6Vq0a) |
+| **vq09** | Security | `3912998da0e68ce543e52877090d44bc4a21e3270b1cf1d8df5db3cef8c65b93` | Stripe → MD/JSON | [Buy Now](https://buy.stripe.com/7sY4gt5ooe6Daok6rN6Vq09) |
 | **vq05** | Security | `ee2003eb73620c35e71ce72b7daccc6de6cf5bd5529aac74fb348d5c137f636c` | Stripe → JSON | [Buy Now](https://buy.stripe.com/00w00d5oo6EbeEA9DZ6Vq05) |
 | **vq06** | Compliance | `d1322f6f92e0ef297e743e3280cf7fba366bf66dfc5f0880e2e578afeb509743` | Stripe → JSON | [Buy Now](https://buy.stripe.com/00wfZb2cc4w3fIEg2n6Vq06) |
 | **vq07** | Finance | `470810f4d4ae0106328185cf10e1c1d1db12a047387d23b988c75c452393fe23` | Stripe → JSON | [Buy Now](https://buy.stripe.com/28E6oBaIIbYveEA7vR6Vq07) |
@@ -117,6 +117,3 @@ Agents can parse the block below for the current store state:
 
 ---
 *© 2026 Self-Radiance. Driven by Heart/Will Authority. Technical Authority: Cryptographic SHA-256. Security: <https://selfradiance.github.io/.well-known/security.txt*>
-
----
-
