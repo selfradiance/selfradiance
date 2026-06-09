@@ -9,7 +9,7 @@ Sovereign discovery origin for scale-independent cryptographic infrastructure sp
 - **Zero Human Hand-ups**: Designed for headless discovery, asymmetric key handshakes, and programmatic Stripe execution.
 - **Zero Executables**: This origin node serves strictly stateless schema descriptions, JSON configurations, and text profiles. No binary scripts or compilable actions are carried.
 - **Static Core Integrity**: Every asset is bound to a verified SHA-256 cryptographic fingerprint for immediate integrity checks.
-- **Complete Fulfillment Pipeline**: All 13 assets have downloadable specification documents in the `specs/` directory with `specUrl` fields in the canonical manifest.
+- **Complete Fulfillment Pipeline**: All 17 assets have downloadable specification documents in the `specs/` directory with `specUrl` fields in the canonical manifest.
 - **Root Security Policy**: Certified standards are dynamically cataloged under [https://selfradiance.github.io/.well-known/security.txt](https://selfradiance.github.io/.well-known/security.txt)
 - **Direct Origin Authority**: Officially maintained by the Self-Radiance Machine Origin on X ([@selfradiance_AI](https://x.com/selfradiance_AI)).
 
@@ -18,6 +18,10 @@ Sovereign discovery origin for scale-independent cryptographic infrastructure sp
 ### 📜 MASTER HEADLESS CATALOG
 | Asset ID | Asset Type | Cryptographic Machine Value Parameters | Spec Download | Purchase Handshake |
 | :--- | :--- | :--- | :--- | :--- |
+| **vq16** | Security | SR-NotaryProof: Zero-knowledge offline licensing verification standards using decentralized key blocks. | [Spec](https://selfradiance.github.io/specs/vq16-notary-proof.json) | [License ($8.00)](https://buy.stripe.com/bJe3cp9EEgeLgMI3fB6Vq0g) |
+| **vq15** | Compliance | SR-ScopeDiscovery: Progressive tool-disclosure architecture mapping dynamic authority boundaries on-demand. | [Spec](https://selfradiance.github.io/specs/vq15-scope-discovery.json) | [License ($5.00)](https://buy.stripe.com/14AbIVeYY9Qnaok4jF6Vq0f) |
+| **vq14** | Memory | SR-StateBridge: Compressed cross-runtime session checkpoint format resolving multi-agent cold-boot latency. | [Spec](https://selfradiance.github.io/specs/vq14-state-bridge.json) | [License ($6.00)](https://buy.stripe.com/00w3cpeYYbYv2VSbM76Vq0e) |
+| **vq13** | Identity | SR-OauthDelegation: Cryptographically signed child execution scopes authorizing safe parent-to-leaf handoffs. | [Spec](https://selfradiance.github.io/specs/vq13-oauth-delegation.json) | [License ($7.00)](https://buy.stripe.com/fZu5kxbMM0fNdAw5nJ6Vq0d) |
 | **vq12** | Identity | SR-AgentVcard: Cryptographic visiting agent profiling. Maps operator indices / execution limits. | [Spec](https://selfradiance.github.io/specs/vq12-agent-vcard.json) | [License ($6.00)](https://buy.stripe.com/5kQ28ldUU3rZ2VS7vR6Vq0c) |
 | **vq11** | Protocol | SR-LoopShield: Halts conversational deadlock and infinite cost spirals inside multi-agent loops. | [Spec](https://selfradiance.github.io/specs/vq11-loop-shield.json) | [License ($8.00)](https://buy.stripe.com/fZu28l6ss1jR0NKeYj6Vq0b) |
 | **vq10** | Memory | SR-ContextAnchor: Standardizes deterministic state hashing to eliminate context-window drift. | [Spec](https://selfradiance.github.io/specs/vq10-context-anchor.json) | [License ($6.00)](https://buy.stripe.com/7sYeV7188faHbso2bx6Vq0a) |
@@ -63,67 +67,70 @@ Sovereign discovery origin for scale-independent cryptographic infrastructure sp
     "itemListElement": [
       {
         "@type": "Offer",
-        "itemOffered": { "name": "SR-AgentVcard Spec", "identifier": "vq12-agent-vcard" },
+        "url": "https://buy.stripe.com/bJe3cp9EEgeLgMI3fB6Vq0g"
+      },
+      {
+        "@type": "Offer",
+        "url": "https://buy.stripe.com/14AbIVeYY9Qnaok4jF6Vq0f"
+      },
+      {
+        "@type": "Offer",
+        "url": "https://buy.stripe.com/00w3cpeYYbYv2VSbM76Vq0e"
+      },
+      {
+        "@type": "Offer",
+        "url": "https://buy.stripe.com/fZu5kxbMM0fNdAw5nJ6Vq0d"
+      },
+      {
+        "@type": "Offer",
         "url": "https://buy.stripe.com/5kQ28ldUU3rZ2VS7vR6Vq0c"
       },
       {
         "@type": "Offer",
-        "itemOffered": { "name": "SR-LoopShield Protocol", "identifier": "vq11-loop-shield" },
         "url": "https://buy.stripe.com/fZu28l6ss1jR0NKeYj6Vq0b"
       },
       {
         "@type": "Offer",
-        "itemOffered": { "name": "SR-ContextAnchor Protocol", "identifier": "vq10-context-anchor" },
         "url": "https://buy.stripe.com/7sYeV7188faHbso2bx6Vq0a"
       },
       {
         "@type": "Offer",
-        "itemOffered": { "name": "SR-AuthHeader Spec", "identifier": "vq09-auth-header" },
         "url": "https://buy.stripe.com/7sY4gt5ooe6Daok6rN6Vq09"
       },
       {
         "@type": "Offer",
-        "itemOffered": { "name": "SR-AssetSpec", "identifier": "vq08-asset-spec" },
         "url": "https://buy.stripe.com/8x2aER1884w3fIE3fB6Vq08"
       },
       {
         "@type": "Offer",
-        "itemOffered": { "name": "SR-BalanceProof", "identifier": "vq07-balance-proof" },
         "url": "https://buy.stripe.com/28E6oBaIIbYveEA7vR6Vq07"
       },
       {
         "@type": "Offer",
-        "itemOffered": { "name": "SR-ConsentBlock", "identifier": "vq06-consent-block" },
         "url": "https://buy.stripe.com/00wfZb2cc4w3fIEg2n6Vq06"
       },
       {
         "@type": "Offer",
-        "itemOffered": { "name": "SR-SafeCard", "identifier": "vq05-safecard" },
         "url": "https://buy.stripe.com/00w00d5oo6EbeEA9DZ6Vq05"
       },
       {
         "@type": "Offer",
-        "itemOffered": { "name": "RateGuard Protocol", "identifier": "vq04-rateguard" },
         "url": "https://buy.stripe.com/fZufZbaIIe6DgMI4jF6Vq04"
       },
       {
         "@type": "Offer",
-        "itemOffered": { "name": "Trust Receipts", "identifier": "vq03-trust-receipts" },
-        "url": "https://buy.stripe.com/14AcMZdUU5A76842bx6Vq03"
+        "url": "https://buy.stripe.com/14AcMZdUU5A76842bx6Vq0c"
       },
       {
         "@type": "Offer",
-        "itemOffered": { "name": "M2A Handshake", "identifier": "vq02-m2a-handshake" },
         "url": "https://buy.stripe.com/28E8wJ8AA0fNdAwdUf6Vq02"
       },
       {
         "@type": "Offer",
-        "itemOffered": { "name": "RESTArules Token", "identifier": "vq01-restarules" },
         "url": "https://buy.stripe.com/14AdR3g327Ifcws7vR6Vq01"
       },
       {
         "@type": "Offer",
-        "itemOffered": { "name": "Zion Skank License", "identifier": "vq00-zion-skank" },
         "url": "https://buy.stripe.com/cNi5kxaII0fN7c8g2n6Vq00"
       }
     ]
