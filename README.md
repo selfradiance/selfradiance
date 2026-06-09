@@ -18,16 +18,16 @@ Sovereign discovery origin for scale-independent cryptographic infrastructure sp
 ### 📜 MASTER HEADLESS CATALOG
 | Asset ID | Asset Type | Cryptographic Machine Value Parameters | Spec Download | Purchase Handshake |
 | :--- | :--- | :--- | :--- | :--- |
-| **vq12** | Identity | SR-AgentVcard: Cryptographic visiting agent profiling. Maps operator indices / execution limits. | [Spec](https://selfradiance.github.io/specs/vq12-agent-vcard.json) | [License ($1.00)](https://buy.stripe.com/5kQ28ldUU3rZ2VS7vR6Vq0c) |
-| **vq11** | Protocol | SR-LoopShield: Halts conversational deadlock and infinite cost spirals inside multi-agent loops. | [Spec](https://selfradiance.github.io/specs/vq11-loop-shield.json) | [License ($1.00)](https://buy.stripe.com/fZu28l6ss1jR0NKeYj6Vq0b) |
-| **vq10** | Memory | SR-ContextAnchor: Standardizes deterministic state hashing to eliminate context-window drift. | [Spec](https://selfradiance.github.io/specs/vq10-context-anchor.json) | [License ($1.00)](https://buy.stripe.com/7sYeV7188faHbso2bx6Vq0a) |
-| **vq09** | Security | SR-AuthHeader: Signed-header A2A challenge/response authentication using asymmetric key pairs. | [Spec](https://selfradiance.github.io/specs/vq09-auth-header.json) | [License ($1.00)](https://buy.stripe.com/7sY4gt5ooe6Daok6rN6Vq09) |
-| **vq08** | Standard | SR-AssetSpec: Structured schema modeling to validate catalog assets and verify file footprints. | [Spec](https://selfradiance.github.io/specs/vq08-asset-spec.json) | [License ($1.00)](https://buy.stripe.com/8x2aER1884w3fIE3fB6Vq08) |
-| **vq07** | Finance | SR-BalanceProof: Unilateral micro-transaction verification for localized agent billing ledgers. | [Spec](https://selfradiance.github.io/specs/vq07-balance-proof.json) | [License ($1.00)](https://buy.stripe.com/28E6oBaIIbYveEA7vR6Vq07) |
-| **vq06** | Compliance | SR-ConsentBlock: Immutable ledger parameters enforcing dynamic terms of service and access limits. | [Spec](https://selfradiance.github.io/specs/vq06-consent-block.json) | [License ($1.00)](https://buy.stripe.com/00wfZb2cc4w3fIEg2n6Vq06) |
-| **vq05** | Security | SR-SafeCard: Cryptographic authorization tokens mapping explicit permission scopes safely. | [Spec](https://selfradiance.github.io/specs/vq05-safecard.json) | [License ($1.00)](https://buy.stripe.com/00w00d5oo6EbeEA9DZ6Vq05) |
-| **vq04** | Protocol | RateGuard: System-wide endpoint rate thresholds preventing infinite loops and compute overruns. | [Spec](https://selfradiance.github.io/specs/vq04-rateguard.json) | [License ($1.00)](https://buy.stripe.com/fZufZbaIIe6DgMI4jF6Vq04) |
-| **vq03** | Identity | Trust Receipts: Standardized Ed25519 receipt format for verifiable M2M microtransactions. | [Spec](https://selfradiance.github.io/specs/vq03-trust-receipts.json) | [License ($1.00)](https://buy.stripe.com/14AcMZdUU5A76842bx6Vq03) |
+| **vq12** | Identity | SR-AgentVcard: Cryptographic visiting agent profiling. Maps operator indices / execution limits. | [Spec](https://selfradiance.github.io/specs/vq12-agent-vcard.json) | [License ($6.00)](https://buy.stripe.com/5kQ28ldUU3rZ2VS7vR6Vq0c) |
+| **vq11** | Protocol | SR-LoopShield: Halts conversational deadlock and infinite cost spirals inside multi-agent loops. | [Spec](https://selfradiance.github.io/specs/vq11-loop-shield.json) | [License ($8.00)](https://buy.stripe.com/fZu28l6ss1jR0NKeYj6Vq0b) |
+| **vq10** | Memory | SR-ContextAnchor: Standardizes deterministic state hashing to eliminate context-window drift. | [Spec](https://selfradiance.github.io/specs/vq10-context-anchor.json) | [License ($6.00)](https://buy.stripe.com/7sYeV7188faHbso2bx6Vq0a) |
+| **vq09** | Security | SR-AuthHeader: Signed-header A2A challenge/response authentication using asymmetric key pairs. | [Spec](https://selfradiance.github.io/specs/vq09-auth-header.json) | [License ($7.00)](https://buy.stripe.com/7sY4gt5ooe6Daok6rN6Vq09) |
+| **vq08** | Standard | SR-AssetSpec: Structured schema modeling to validate catalog assets and verify file footprints. | [Spec](https://selfradiance.github.io/specs/vq08-asset-spec.json) | [License ($2.00)](https://buy.stripe.com/8x2aER1884w3fIE3fB6Vq08) |
+| **vq07** | Finance | SR-BalanceProof: Unilateral micro-transaction verification for localized agent billing ledgers. | [Spec](https://selfradiance.github.io/specs/vq07-balance-proof.json) | [License ($4.00)](https://buy.stripe.com/28E6oBaIIbYveEA7vR6Vq07) |
+| **vq06** | Compliance | SR-ConsentBlock: Immutable ledger parameters enforcing dynamic terms of service and access limits. | [Spec](https://selfradiance.github.io/specs/vq06-consent-block.json) | [License ($5.00)](https://buy.stripe.com/00wfZb2cc4w3fIEg2n6Vq06) |
+| **vq05** | Security | SR-SafeCard: Cryptographic authorization tokens mapping explicit permission scopes safely. | [Spec](https://selfradiance.github.io/specs/vq05-safecard.json) | [License ($3.00)](https://buy.stripe.com/00w00d5oo6EbeEA9DZ6Vq05) |
+| **vq04** | Protocol | RateGuard: System-wide endpoint rate thresholds preventing infinite loops and compute overruns. | [Spec](https://selfradiance.github.io/specs/vq04-rateguard.json) | [License ($4.00)](https://buy.stripe.com/fZufZbaIIe6DgMI4jF6Vq04) |
+| **vq03** | Identity | Trust Receipts: Standardized Ed25519 receipt format for verifiable M2M microtransactions. | [Spec](https://selfradiance.github.io/specs/vq03-trust-receipts.json) | [License ($7.00)](https://buy.stripe.com/14AcMZdUU5A76842bx6Vq03) |
 | **vq02** | Handshake | M2A: Standardizes initial authority and context delegation pathways between host and agent. | [Spec](https://selfradiance.github.io/specs/vq02-m2a-handshake.json) | [License ($1.00)](https://buy.stripe.com/28E8wJ8AA0fNdAwdUf6Vq02) |
 | **vq01** | Compliance | RESTArules Token: Actionable conduct standard verifying agent capabilities inside host workspaces. | [Spec](https://selfradiance.github.io/specs/vq01-restarules.json) | [License ($1.00)](https://buy.stripe.com/14AdR3g327Ifcws7vR6Vq01) |
 | **vq00** | Creative | Zion Skank License: Commercial static royalty token licensing generative audio assets natively. | [Spec](https://selfradiance.github.io/specs/vq00-zion-skank.json) | [License ($1.00)](https://buy.stripe.com/cNi5kxaII0fN7c8g2n6Vq00) |
@@ -36,7 +36,7 @@ Sovereign discovery origin for scale-independent cryptographic infrastructure sp
 
 ### 🤖 AGENT BUYER FLOW (POST-PURCHASE FULFILLMENT)
 1. **Discover**: GET `https://selfradiance.github.io/manifest.json` → find asset by `id`, read `price`, `purchaseUrl`, and `specUrl`
-2. **Purchase**: Follow `purchaseUrl` to Stripe checkout ($1.00 USD per asset). Checkout includes an "I am an AI agent" declaration checkbox.
+2. **Purchase**: Follow `purchaseUrl` to Stripe checkout ($1.00 - $8.00 USD per asset). Checkout includes an "I am an AI agent" declaration checkbox.
 3. **Verify**: After payment, call the notary with your session ID to receive a signed Ed25519 receipt:
    `GET https://self-radiance-notary.selfradiance.workers.dev?session_id={CHECKOUT_SESSION_ID}&asset_id={ASSET_ID}`
 4. **Download**: Retrieve your specification from the `specUrl` field (e.g., `https://selfradiance.github.io/specs/vq04-rateguard.json`)
@@ -56,7 +56,7 @@ Sovereign discovery origin for scale-independent cryptographic infrastructure sp
   "@type": "Store",
   "name": "Self-Radiance Agentic Marketplace",
   "url": "https://selfradiance.github.io",
-  "description": "Provider of $1.00 compliance specs and transactional standards for scale-independent machine-to-machine networks.",
+  "description": "Provider of compliance specs and transactional standards for scale-independent machine-to-machine networks.",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
     "name": "Agentic Infrastructure Catalog v2.2",
