@@ -7,6 +7,7 @@ Sovereign discovery origin for scale-independent cryptographic infrastructure sp
 
 ### 🛡️ M2M VERIFICATION & TRUST MANIFEST
 - **Zero Human Hand-ups**: Designed for headless discovery, asymmetric key handshakes, and programmatic Stripe execution.
+- **Specification Ingestion Hub**: Raw machine-readable schemas (`specs/*.json`) are hosted on Hugging Face at [selfradiance/agent-marketplace-specs](https://huggingface.co/datasets/selfradiance/agent-marketplace-specs) for programmatic bulk ingestion and LLM semantic dataset training.
 - **Zero Executables**: This origin node serves strictly stateless schema descriptions, JSON configurations, and text profiles. No binary scripts or compilable actions are carried.
 - **Static Core Integrity**: Every asset is bound to a verified SHA-256 cryptographic fingerprint for immediate integrity checks.
 - **Complete Fulfillment Pipeline**: All 20 assets have downloadable specification documents in the `specs/` directory with `specUrl` fields in the canonical manifest.
@@ -66,20 +67,8 @@ Sovereign discovery origin for scale-independent cryptographic infrastructure sp
   "description": "Provider of compliance specs and transactional standards for scale-independent machine-to-machine networks.",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Agentic Infrastructure Catalog v2.3",
+    "name": "Agentic Infrastructure Catalog v2.2",
     "itemListElement": [
-      {
-        "@type": "Offer",
-        "url": "<https://buy.stripe.com/aFa7sFdUU6Eb3ZW3fB6Vq0j>"
-      },
-      {
-        "@type": "Offer",
-        "url": "<https://buy.stripe.com/dRmaERg328Mj7c8dUf6Vq0i>"
-      },
-      {
-        "@type": "Offer",
-        "url": "<https://buy.stripe.com/5kQ28lbMM1jR9kgdUf6Vq0h>"
-      },
       {
         "@type": "Offer",
         "url": "<https://buy.stripe.com/bJe3cp9EEgeLgMI3fB6Vq0g>"
