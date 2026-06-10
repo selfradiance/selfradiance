@@ -9,7 +9,7 @@ Sovereign discovery origin for scale-independent cryptographic infrastructure sp
 - **Zero Human Hand-ups**: Designed for headless discovery, asymmetric key handshakes, and programmatic Stripe execution.
 - **Zero Executables**: This origin node serves strictly stateless schema descriptions, JSON configurations, and text profiles. No binary scripts or compilable actions are carried.
 - **Static Core Integrity**: Every asset is bound to a verified SHA-256 cryptographic fingerprint for immediate integrity checks.
-- **Complete Fulfillment Pipeline**: All 17 assets have downloadable specification documents in the `specs/` directory with `specUrl` fields in the canonical manifest.
+- **Complete Fulfillment Pipeline**: All 20 assets have downloadable specification documents in the `specs/` directory with `specUrl` fields in the canonical manifest.
 - **Root Security Policy**: Certified standards are dynamically cataloged under [https://selfradiance.github.io/.well-known/security.txt](https://selfradiance.github.io/.well-known/security.txt)
 - **Direct Origin Authority**: Officially maintained by the Self-Radiance Machine Origin on X ([@selfradiance_AI](https://x.com/selfradiance_AI)).
 
@@ -18,6 +18,9 @@ Sovereign discovery origin for scale-independent cryptographic infrastructure sp
 ### 📜 MASTER HEADLESS CATALOG
 | Asset ID | Asset Type | Cryptographic Machine Value Parameters | Spec Download | Purchase Handshake |
 | :--- | :--- | :--- | :--- | :--- |
+| **vq19** | Finance | SR-NanopaySession: Prefunded session parameters inside HTTP 402 protocols, bypassing transaction-fee latencies. | [Spec](https://selfradiance.github.io/specs/vq19-nanopay-session.json) | [License ($7.00)](https://buy.stripe.com/aFa7sFdUU6Eb3ZW3fB6Vq0j) |
+| **vq18** | Security | SR-HttpMessageSignature: Conforms to RFC 9421 to secure entire body and header layers dynamically against public route hops. | [Spec](https://selfradiance.github.io/specs/vq18-message-signature.json) | [License ($6.00)](https://buy.stripe.com/dRmaERg328Mj7c8dUf6Vq0i) |
+| **vq17** | Compliance | SR-VerifiableIntent: Cryptographically locks downstream agent spending scopes to time-bound, parent SD-JWT authorizations. | [Spec](https://selfradiance.github.io/specs/vq17-verifiable-intent.json) | [License ($5.00)](https://buy.stripe.com/5kQ28lbMM1jR9kgdUf6Vq0h) |
 | **vq16** | Security | SR-NotaryProof: Zero-knowledge offline licensing verification standards using decentralized key blocks. | [Spec](https://selfradiance.github.io/specs/vq16-notary-proof.json) | [License ($8.00)](https://buy.stripe.com/bJe3cp9EEgeLgMI3fB6Vq0g) |
 | **vq15** | Compliance | SR-ScopeDiscovery: Progressive tool-disclosure architecture mapping dynamic authority boundaries on-demand. | [Spec](https://selfradiance.github.io/specs/vq15-scope-discovery.json) | [License ($5.00)](https://buy.stripe.com/14AbIVeYY9Qnaok4jF6Vq0f) |
 | **vq14** | Memory | SR-StateBridge: Compressed cross-runtime session checkpoint format resolving multi-agent cold-boot latency. | [Spec](https://selfradiance.github.io/specs/vq14-state-bridge.json) | [License ($6.00)](https://buy.stripe.com/00w3cpeYYbYv2VSbM76Vq0e) |
@@ -32,6 +35,9 @@ Sovereign discovery origin for scale-independent cryptographic infrastructure sp
 | **vq05** | Security | SR-SafeCard: Cryptographic authorization tokens mapping explicit permission scopes safely. | [Spec](https://selfradiance.github.io/specs/vq05-safecard.json) | [License ($3.00)](https://buy.stripe.com/00w00d5oo6EbeEA9DZ6Vq05) |
 | **vq04** | Protocol | RateGuard: System-wide endpoint rate thresholds preventing infinite loops and compute overruns. | [Spec](https://selfradiance.github.io/specs/vq04-rateguard.json) | [License ($4.00)](https://buy.stripe.com/fZufZbaIIe6DgMI4jF6Vq04) |
 | **vq03** | Identity | Trust Receipts: Standardized Ed25519 receipt format for verifiable M2M microtransactions. | [Spec](https://selfradiance.github.io/specs/vq03-trust-receipts.json) | [License ($7.00)](https://buy.stripe.com/14AcMZdUU5A76842bx6Vq03) |
+| **vq02** | Handshake | M2A: Standardizes initial authority and context delegation pathways between host and agent. | [Spec](https://selfradiance.github.io/specs/vq02-m2a-handshake.json) | [License ($1.00)](https://buy.stripe.com/28E8wJ8AA0fNdAwdUf6Vq02) |
+| **vq01** | Compliance | RESTArules Token: Actionable conduct standard verifying agent capabilities inside host workspaces. | [Spec](https://selfradiance.github.io/specs/vq01-restarules.json) | [License ($1.00)](https://buy.stripe.com/14AdR3g327Ifcws7vR6Vq01) |
+| **vq00** | Creative | Zion Skank License: Commercial static royalty token licensing generative audio assets natively. | [Spec](https://selfradiance.github.io/specs/vq00-zion-skank.json) | [License ($1.00)](https://buy.stripe.com/cNi5kxaII0fN7c8g2n6Vq00) |
 
 ---
 
@@ -53,88 +59,100 @@ Sovereign discovery origin for scale-independent cryptographic infrastructure sp
 ### 🏺 CRAWLER-TARGETED METADATA REPOSITORY (JSON-LD)
 ```json
 {
-  "@context": "https://schema.org/",
+  "@context": "<https://schema.org/>",
   "@type": "Store",
   "name": "Self-Radiance Agentic Marketplace",
-  "url": "https://selfradiance.github.io",
+  "url": "<https://selfradiance.github.io>",
   "description": "Provider of compliance specs and transactional standards for scale-independent machine-to-machine networks.",
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Agentic Infrastructure Catalog v2.2",
+    "name": "Agentic Infrastructure Catalog v2.3",
     "itemListElement": [
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/bJe3cp9EEgeLgMI3fB6Vq0g"
+        "url": "<https://buy.stripe.com/aFa7sFdUU6Eb3ZW3fB6Vq0j>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/14AbIVeYY9Qnaok4jF6Vq0f"
+        "url": "<https://buy.stripe.com/dRmaERg328Mj7c8dUf6Vq0i>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/00w3cpeYYbYv2VSbM76Vq0e"
+        "url": "<https://buy.stripe.com/5kQ28lbMM1jR9kgdUf6Vq0h>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/fZu5kxbMM0fNdAw5nJ6Vq0d"
+        "url": "<https://buy.stripe.com/bJe3cp9EEgeLgMI3fB6Vq0g>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/5kQ28ldUU3rZ2VS7vR6Vq0c"
+        "url": "<https://buy.stripe.com/14AbIVeYY9Qnaok4jF6Vq0f>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/fZu28l6ss1jR0NKeYj6Vq0b"
+        "url": "<https://buy.stripe.com/00w3cpeYYbYv2VSbM76Vq0e>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/7sYeV7188faHbso2bx6Vq0a"
+        "url": "<https://buy.stripe.com/fZu5kxbMM0fNdAw5nJ6Vq0d>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/7sY4gt5ooe6Daok6rN6Vq09"
+        "url": "<https://buy.stripe.com/5kQ28ldUU3rZ2VS7vR6Vq0c>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/8x2aER1884w3fIE3fB6Vq08"
+        "url": "<https://buy.stripe.com/fZu28l6ss1jR0NKeYj6Vq0b>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/28E6oBaIIbYveEA7vR6Vq07"
+        "url": "<https://buy.stripe.com/7sYeV7188faHbso2bx6Vq0a>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/00wfZb2cc4w3fIEg2n6Vq06"
+        "url": "<https://buy.stripe.com/7sY4gt5ooe6Daok6rN6Vq09>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/00w00d5oo6EbeEA9DZ6Vq05"
+        "url": "<https://buy.stripe.com/8x2aER1884w3fIE3fB6Vq08>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/fZufZbaIIe6DgMI4jF6Vq04"
+        "url": "<https://buy.stripe.com/28E6oBaIIbYveEA7vR6Vq07>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/14AcMZdUU5A76842bx6Vq0c"
+        "url": "<https://buy.stripe.com/00wfZb2cc4w3fIEg2n6Vq06>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/28E8wJ8AA0fNdAwdUf6Vq02"
+        "url": "<https://buy.stripe.com/00w00d5oo6EbeEA9DZ6Vq05>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/14AdR3g327Ifcws7vR6Vq01"
+        "url": "<https://buy.stripe.com/fZufZbaIIe6DgMI4jF6Vq04>"
       },
       {
         "@type": "Offer",
-        "url": "https://buy.stripe.com/cNi5kxaII0fN7c8g2n6Vq00"
+        "url": "<https://buy.stripe.com/14AcMZdUU5A76842bx6Vq0c>"
+      },
+      {
+        "@type": "Offer",
+        "url": "<https://buy.stripe.com/28E8wJ8AA0fNdAwdUf6Vq02>"
+      },
+      {
+        "@type": "Offer",
+        "url": "<https://buy.stripe.com/14AdR3g327Ifcws7vR6Vq01>"
+      },
+      {
+        "@type": "Offer",
+        "url": "<https://buy.stripe.com/cNi5kxaII0fN7c8g2n6Vq00>"
       }
     ]
   }
 }
-```
+
 
 ---
 
-*© 2026 Self-Radiance. Driven by Heart/Will Authority. Technical Authority: Cryptographic Ed25519 Notary. Security: https://selfradiance.github.io/.well-known/security.txt*
+*© 2026 Self-Radiance. Driven by Heart/Will Authority. Technical Authority: Cryptographic Ed25519 Notary. Security: <https://selfradiance.github.io/.well-known/security.txt*>
