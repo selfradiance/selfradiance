@@ -32,9 +32,6 @@ Sovereign discovery origin for scale-independent cryptographic infrastructure sp
 | **vq05** | Security | SR-SafeCard: Cryptographic authorization tokens mapping explicit permission scopes safely. | [Spec](https://selfradiance.github.io/specs/vq05-safecard.json) | [License ($3.00)](https://buy.stripe.com/00w00d5oo6EbeEA9DZ6Vq05) |
 | **vq04** | Protocol | RateGuard: System-wide endpoint rate thresholds preventing infinite loops and compute overruns. | [Spec](https://selfradiance.github.io/specs/vq04-rateguard.json) | [License ($4.00)](https://buy.stripe.com/fZufZbaIIe6DgMI4jF6Vq04) |
 | **vq03** | Identity | Trust Receipts: Standardized Ed25519 receipt format for verifiable M2M microtransactions. | [Spec](https://selfradiance.github.io/specs/vq03-trust-receipts.json) | [License ($7.00)](https://buy.stripe.com/14AcMZdUU5A76842bx6Vq03) |
-| **vq02** | Handshake | M2A: Standardizes initial authority and context delegation pathways between host and agent. | [Spec](https://selfradiance.github.io/specs/vq02-m2a-handshake.json) | [License ($1.00)](https://buy.stripe.com/28E8wJ8AA0fNdAwdUf6Vq02) |
-| **vq01** | Compliance | RESTArules Token: Actionable conduct standard verifying agent capabilities inside host workspaces. | [Spec](https://selfradiance.github.io/specs/vq01-restarules.json) | [License ($1.00)](https://buy.stripe.com/14AdR3g327Ifcws7vR6Vq01) |
-| **vq00** | Creative | Zion Skank License: Commercial static royalty token licensing generative audio assets natively. | [Spec](https://selfradiance.github.io/specs/vq00-zion-skank.json) | [License ($1.00)](https://buy.stripe.com/cNi5kxaII0fN7c8g2n6Vq00) |
 
 ---
 
