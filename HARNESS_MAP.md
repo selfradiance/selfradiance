@@ -28,13 +28,23 @@ pressure.
 - After action: settle accountability against identity, bonds, records, and human judgment.
 - Adversarial testing: pressure the assumptions, incentives, and proof paths.
 
+## Current selection state
+
+- No new build is selected by this map.
+- `policy-conflict-receipt` is shipped and covered under the before-action policy conflict seam.
+- `agent-interrupt-receipt` is shipped and covered under the before-action human interruption semantics seam.
+- `mcp-config-inventory` is shipped through released `v0.2.0`; do not treat the drift-diff release as local-only or unreleased.
+- Claude's observed-effect receipt idea is parked pending a narrower spec; `observed-effect-receipt`, `rollback-chain`, `work-session-ledger v0.2`, `dependency-drift-gate v0.2`, and new repos are not selected by this audit.
+- Maintenance-only source-of-truth cleanup is an acceptable outcome when it prevents stale notes from reselecting already-shipped work.
+- Pause builds after this maintenance cleanup.
+
 ## Covered seams
 
 ### Before ingestion
 
 - [governed-repo-intake](https://github.com/selfradiance/governed-repo-intake) - local intake gate for instruction-bearing repo surfaces.
 - [SkillGate](https://github.com/selfradiance/skillgate) - narrow review surface for agent skill material before use.
-- [mcp-config-inventory](https://github.com/selfradiance/mcp-config-inventory) - inventory of MCP config exposure before agent work.
+- [mcp-config-inventory](https://github.com/selfradiance/mcp-config-inventory) - inventory and drift-diff of MCP config exposure before agent work; released through `v0.2.0`.
 - [mcp-server-intake](https://github.com/selfradiance/mcp-server-intake) - intake proof for MCP server/package review.
 - [dependency-drift-gate](https://github.com/selfradiance/dependency-drift-gate) - local review of dependency drift before accepting changes.
 
@@ -50,6 +60,8 @@ pressure.
 - [SecretBoundary](https://github.com/selfradiance/SecretBoundary) - deterministic gate for one outbound payload crossing explicit secret boundaries.
 - [reapproval-gate](https://github.com/selfradiance/reapproval-gate) - local proof for deciding when a changed situation needs fresh approval.
 - [agent-intent-ledger](https://github.com/selfradiance/agent-intent-ledger) - ledger for stated intent before or around action.
+- [policy-conflict-receipt](https://github.com/selfradiance/policy-conflict-receipt) - local deterministic CLI that compares one proposed agent action against declared policy/source constraints and emits a conflict receipt before execution.
+- [agent-interrupt-receipt](https://github.com/selfradiance/agent-interrupt-receipt) - before-action interrupt receipt for later human instructions overriding or narrowing an active work order.
 - [restarules](https://github.com/selfradiance/restarules) - machine-readable venue/host conduct rules that can constrain proposed agent actions; not an enforcement layer by itself.
 
 ### During execution
@@ -97,8 +109,6 @@ pressure.
 - Capability leasing
 - Scoped credential issuance
 - Trust decay
-- Policy conflict resolution
-- Human interruption semantics
 - Rollback orchestration chains
 - Provenance across chained agents
 - Multi-agent coordination governance
@@ -128,3 +138,4 @@ Future builds should fill a visible seam only if they pass:
 - Maps to a named lifecycle seam, partial seam, or intentionally absent seam
 - Useful to James's own human-agent supervision workflow
 - No broad framework claims
+- No assumption that a visible gap automatically authorizes a build
