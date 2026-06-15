@@ -58,6 +58,7 @@ All 20 primitives are machine-payable. A live Cloudflare Worker gateway sells a 
 - **Original single-asset proof of concept (vq00, historical)**: [x402-paid-endpoint.selfradiance.workers.dev](https://x402-paid-endpoint.selfradiance.workers.dev) — repo [selfradiance/x402-paid-endpoint](https://github.com/selfradiance/x402-paid-endpoint)
 - **Reference buyer gate**: Payment-gated by `x402-spend-receipt`: policy check and signed receipt before any funds move.
 - **First zero-human mainnet purchase of a catalog license settled on-chain**: [Base tx 0xd7312064...90d5](https://basescan.org/tx/0xd7312064e5b9e0f5a5469d6d19e298d8ede277cb2398edefa7d3a2833f1290d5)
+- **Witness-only web attestation (separate primitive)**: pay 1 USDC, receive a signed Ed25519 receipt binding the on-chain payment to the SHA-256 of an observed page body. Witnesses observation, never legitimacy. Live: [web-attestation.selfradiance.workers.dev](https://web-attestation.selfradiance.workers.dev) — repo [selfradiance/web-attestation](https://github.com/selfradiance/web-attestation)
 ---
 
 ## 🤖 How the Trust Flow Works
